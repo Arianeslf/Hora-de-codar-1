@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      alert(
+        "Escolhas as seguintes figuras geométricas para calcular cada uma das suas respectivas áreas.",
+      );
+      var figura_geometrica = prompt(
+        "escolha aqui:\n*Retângulo\n*Quadrado\n*Losango\n*Trapézio\n*Paralelogramo\n*Triângulo\n*Circulo",
+      );
+      switch (figura_geometrica) {
+        case "Quadrado":
+          let lado = prompt("Digite o tamanho de um dos lado do quadrado:");
+          var area_quadrado = lado * lado;
+          alert("A área do quadrado é " + area_quadrado);
+          break;
+        case "Retângulo":
+          let ladodoR = prompt("Digite o valor da base:");
+          let altura = prompt("Digite o valor da altura:");
+          var area_retangulo = ladodoR * altura;
+          alert("A área do retângulo é " + area_retangulo);
+        case "Losango":
+          let dgmaior = prompt("Digite o diagonal maior:");
+          let dgmenor = prompt("Digite o diagonal menor:");
+          var area_losango = (dgmaior * dgmenor) / 2;
+          alert("A área do losango é " + area_losango);
+        case "Trapézio":
+          let bsmaior = prompt("Digite a base maior:");
+          let bsmenor = prompt("Digite a base menor:");
+          let h = prompt("Digite a altura:");
+          var area_trapezio = ((bsmaior + bsmenor) * h) / 2;
+          alert("A área do trapézio é " + area_trapezio);
+          break;
+        case "Paralelogramo":
+          let bp = prompt("Digite a base:");
+          let hp = prompt("Digite a altura:");
+          var area_paralelogramo = bp * hp;
+          alert("A área do paralelogramo é " + area_paralelogramo);
+          break;
+        case "Triângulo":
+          let bt = prompt("Digite a base:");
+          let ht = prompt("Digite a altura:");
+          var area_triangulo = (bt * ht) / 2;
+          alert("A área do triâgulo é " + area_triangulo);
+        case "Circulo":
+          let r = prompt("Digite o raio do circulo:");
+          var area_circulo = Math.PI * r ** 2;
+          alert("A área do circulo é " + area_circulo);
+        default:
+          alert("Opção inválida");
+      }
+    </script>
+  </body>
+</html>
