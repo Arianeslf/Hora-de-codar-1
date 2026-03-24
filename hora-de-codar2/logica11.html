@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      alert(
+        "CALCULADORA\nEscolha um Operador e logo em seguida digite dois numeros para executar a tal operação.",
+      );
+      var operador = Number(
+        prompt(
+          "escolha o operador\n1-Adição\n2-Subtração\n3-Divisão\n4-Multiplicação",
+        ),
+      );
+
+      switch (operador) {
+        case 1:
+          var a = parseInt(prompt("Digite o 1 número:"));
+          var b = parseInt(prompt("Digite o 2 número:"));
+          var Resultado = a + b;
+          alert("O resultado é " + Resultado);
+          break;
+        case 2:
+          var a = parseInt(prompt("Digite o 1 número:"));
+          var b = parseInt(prompt("Digite o 2 número:"));
+          var Resultado = a - b;
+          alert("O resultado é " + Resultado);
+          break;
+        case 3:
+          var a = parseInt(prompt("Digite o 1 número:"));
+          var b = parseInt(prompt("Digite o 2 número:"));
+          var Resultado = a / b;
+          alert("O resultado é " + Resultado);
+          break;
+        case 4:
+          var a = parseInt(prompt("Digite o 1 número:"));
+          var b = parseInt(prompt("Digite o 2 número:"));
+          var Resultado = a * b;
+          alert("O resultado é " + Resultado);
+          break;
+        default:
+          alert("Digite novamente");
+      }
+    </script>
+  </body>
+</html>

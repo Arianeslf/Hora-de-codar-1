@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      var a = Number(prompt("Digite o 1 número:"));
+      var b = Number(prompt("Digite o 2 número:"));
+      while (b == a) {
+        var b = Number(prompt("Digite um número diferente:"));
+      }
+      var c = Number(prompt("Digite o 3 número:"));
+      while (c == a || c == b) {
+        var c = Number(prompt("Digite um número diferente:"));
+      }
+      var d = Number(prompt("Digite o 4 número:"));
+      while (d == a || d == b || d == c) {
+        var d = Number(prompt("Digite um número diferente:"));
+      }
+      if (a > b && a > c && a > d) {
+        alert(
+          "O primeiro número é " +
+            a +
+            " é o ultimo número é " +
+            d +
+            " e o maior de todos os números é o " +
+            a,
+        );
+      } else if (b > a && b > c && b > d) {
+        alert(
+          "O primeiro número é " +
+            a +
+            " é o ultimo número é " +
+            d +
+            " e o maior de todos os números é o " +
+            b,
+        );
+      } else if (c > a && c > b && c > d) {
+        alert(
+          "O primeiro número é " +
+            a +
+            " é o ultimo número é " +
+            d +
+            " e o maior de todos os números é o " +
+            c,
+        );
+      } else {
+        alert(
+          "O primeiro número é " +
+            a +
+            " é o ultimo número é " +
+            d +
+            " e o maior de todos os números é o " +
+            d,
+        );
+      }
+    </script>
+  </body>
+</html>

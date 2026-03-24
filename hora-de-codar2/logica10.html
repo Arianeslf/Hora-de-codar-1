@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      alert("Vamos descobrir seu peso ideal de acordo com seu genêro!");
+      var genero = prompt(
+        "*Feminino\n*Masculino\nDigite seu Genêro:",
+      ).toUpperCase();
+      if (genero == "FEMININO") {
+        var altura = Number(prompt("Digite sua altura:"));
+        var psa = 62.1 * altura - 44.7;
+        alert("O seu peso ideal é " + psa + "kg");
+      } else if (genero == "MASCULINO") {
+        var altura = Number(prompt("Digite sua altura:"));
+        var psh = 72.7 * altura - 58;
+        alert("O seu peso ideal é " + psh + "kg");
+      } else {
+        alert("Digite o seu genêro novamente!");
+      }
+    </script>
+  </body>
+</html>

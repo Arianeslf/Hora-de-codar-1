@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      alert(
+        "Digite 4 números e veja a média aritmética dos nº maiores que 0 e menores que 10:",
+      );
+      var a = Number(prompt("Digite o 1 número:"));
+      var b = Number(prompt("Digite o 2 número:"));
+      var c = Number(prompt("Digite o 3 número:"));
+      var d = Number(prompt("Digite o 4 número:"));
+
+      var caixa = [];
+      var soma = 0;
+
+      if (a > 0 && a < 10) {
+        caixa.push(a);
+        soma += a;
+      }
+
+      if (b > 0 && b < 10) {
+        caixa.push(b);
+        soma += b;
+      }
+
+      if (c > 0 && c < 10) {
+        caixa.push(c);
+        soma += c;
+      }
+
+      if (d > 0 && d < 10) {
+        caixa.push(d);
+        soma += d;
+      }
+
+      alert(
+        "Os números são esses: " +
+          caixa +
+          "\nA média aritméticas é " +
+          soma / caixa.length,
+      );
+    </script>
+  </body>
+</html>

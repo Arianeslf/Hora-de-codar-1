@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      var n1 = Number(prompt("Digite um número:"));
+      var n2 = Number(prompt("Digite o segundo número:"));
+      while (n2 == n1) {
+        var n2 = Number(prompt("Digite um número diferente:"));
+      }
+      var n3 = Number(prompt("Digite o terceiro número:"));
+      while (n3 == n1 || n3 == n2) {
+        var n2 = Number(prompt("Digite um número diferente:"));
+      }
+      if (n1 < n2 && n1 < n3) {
+        alert("A soma de esses dois números maiores é " + (n2 + n3));
+      } else if (n2 < n1 && n2 < n3) {
+        alert("A soma de esses dois números maiores é " + (n1 + n3));
+      } else {
+        alert("A soma de esses dois números maiores é " + (n1 + n2));
+      }
+    </script>
+  </body>
+</html>

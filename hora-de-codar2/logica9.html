@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      var data = Number(prompt("Em que ano você nasceu?"));
+      var ano = new Date().getFullYear();
+      var idade = ano - data;
+      if (idade >= 18) {
+        alert("Como você tem " + idade + ", então você pode votar esse ano!");
+      } else {
+        alert(
+          "Como você tem " + idade + " , então você não pode votar esse ano!",
+        );
+      }
+    </script>
+  </body>
+</html>
