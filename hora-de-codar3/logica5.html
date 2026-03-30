@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <h1>Média dos números entre dois valores</h1>
+
+    <input type="text" id="cam1" placeholder="Digite o primeiro número" />
+    <input type="text" id="cam2" placeholder="Digite o segundo número" />
+
+    <button onclick="calcularMedia()">Calcular Média</button>
+
+    <p id="resultado"></p>
+
+    <script>
+      function calcularMedia() {
+        // Função para calcular a média dos números entre os dois valores
+        let input1 = Number(document.getElementById("cam1").value); // Obtém o valor do primeiro campo e converte para número
+        let input2 = Number(document.getElementById("cam2").value); // Obtém o valor do segundo campo e converte para número
+
+        // validação
+        if (isNaN(input1) || isNaN(input2)) { // Verifica se os valores são números válidos
+          document.getElementById("resultado").innerText =
+            "Digite valores válidos!";// Exibe uma mensagem de erro se os valores não forem números
+          return;// Encerra a função se os valores não forem válidos
+        }
+
+        // garante que input1 seja o menor valor
+        if (input1 > input2) {
+          let aux = input1;
+          input1 = input2;
+          input2 = aux;
+        }
+
+        let soma = 0; // Variável para armazenar a soma dos números
+        let contador = 0; // Variável para contar quantos números foram somados
+
+        for (let i = input1; i <= input2; i++) {
+          // Loop para percorrer os números entre input1 e input2
+          soma += i;
+          contador++;
+        }
+
+        let media = soma / contador;
+
+        document.getElementById("resultado").innerText =
+          "A média é: " + media.toFixed(2);
+      }
+    </script>
+  </body>
+</html>

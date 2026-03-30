@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      let continuar = "S";
+      let aprovados = 0;
+
+      while (continuar === "S") { // Loop para calcular a média de vários alunos
+        let nota1 = Number(prompt("Digite a primeira nota:"));
+        let nota2 = Number(prompt("Digite a segunda nota:"));
+
+        let media = (nota1 + nota2) / 2;
+
+        alert("Média final: " + media);
+
+        if (media >= 9.5) {
+          aprovados++;
+        }
+
+        continuar = prompt(// Pergunta se deseja calcular a média de outro aluno
+          "Calcular a média de outro aluno? (S/N)",
+        ).toUpperCase();
+      }
+
+      alert("Quantidade de alunos aprovados: " + aprovados);
+    </script>
+  </body>
+</html>

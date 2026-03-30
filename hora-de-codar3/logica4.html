@@ -1,11 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lógica de Programação</title>
-</head>
-<body>
-    <script></script>
-</body>
+  </head>
+  <body>
+    <script>
+      let soma = 0; // Variável para armazenar a soma dos números
+      let contador = 0;  // Variável para contar quantos números foram somados
+
+      for (let i = 15; i <= 100; i++) { // Loop para percorrer os números de 15 a 100
+        soma += i;  // Adiciona o número atual à soma
+        contador++; // Incrementa o contador para cada número somado
+      }
+
+      let media = soma / contador;// Calcula a média dividindo a soma pelo contador
+
+      document.write("A média é: " + media);
+    </script>
+  </body>
 </html>
