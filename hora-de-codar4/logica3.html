@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de programação</title>
+  </head>
+  <body>
+    <script>
+      let frutas = [
+        "maçã",
+        "banana",
+        "laranja",
+        "uva",
+        "manga",
+        "abacaxi",
+        "morango",
+        "pera",
+      ];
+      alert("COMPRAS\nFaça sua lista de compras. Digite o nome de uma fruta para removê-la da lista.");
+      while (frutas.length != 0) {    // Enquanto houver frutas na lista
+        let fruta = prompt("Digite o nome de uma fruta:\n" + frutas.join("\n")).toLowerCase();
+        if (frutas.includes(fruta)) {// Verifica se a fruta está na lista
+            frutas.splice(frutas.indexOf(fruta), 1); // Remove a fruta da lista
+            alert(fruta + " foi removida da lista de compras.");
+        } else {
+            alert(fruta + " não está na lista de compras.");
+        }
+} 
+      alert("Lista de compras finalizada:\n" + frutas.join("\n"));
+    </script>
+  </body>
+
+    </script>
+  </body>
+</html>

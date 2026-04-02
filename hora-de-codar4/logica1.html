@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de programação</title>
+  </head>
+  <body>
+    <script>
+      alert("Sistema de Cadastro Ilimitado de Estudantes com Encerramento por Comando \"PARE\"");
+      let estudantes = []; // Array para armazenar os estudantes
+      while( true ) {// Loop infinito para cadastrar estudantes
+        let nome = prompt("Digite o nome do estudante (ou 'PARE' para encerrar):");
+        if (nome.toUpperCase() === "PARE") {
+          break; // Encerra o loop se o usuário digitar "PARE"
+        }
+        estudantes.push(nome); // Adiciona o nome do estudante ao array
+      }
+      alert("Estudantes cadastrados:\n" + estudantes.join("\n"));// Exibe a lista de estudantes cadastrados
+    </script>
+  </body>
+</html>

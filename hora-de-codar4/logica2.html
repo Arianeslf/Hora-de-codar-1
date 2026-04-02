@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de programação</title>
+  </head>
+  <body>
+    <script>
+      let planetas = [
+        "terra",
+        "marte",
+        "plutão",
+        "vênus",
+        "júpiter",
+        "saturno",
+      ];
+      let planeta = prompt("Digite o nome de um planeta:").toLowerCase();
+      if (planetas.includes(planeta)) {
+        alert(planeta + " está na lista.");
+      } else {
+        alert(planeta + " não está na lista.");
+      }
+    </script>
+  </body>
+</html>
