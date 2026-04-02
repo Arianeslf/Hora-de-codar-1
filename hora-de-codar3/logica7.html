@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <script>
+      let soma = 0;
+
+      for (let i = 1; i <= 6; i++) {
+        let nota = Number(prompt("Digite a nota " + i + " (0 a 10):"));
+
+        // validação
+        while (nota < 0 || nota > 10 || isNaN(nota)) {
+          nota = Number(
+            prompt("Valor inválido! Digite a nota " + i + " (0 a 10):"),
+          );
+        }
+
+        soma += nota;
+      }
+
+      let media = soma / 6;
+
+      alert("A média do aluno é: " + media);
+    </script>
+  </body>
+</html>
